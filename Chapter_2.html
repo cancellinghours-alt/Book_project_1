@@ -3,10 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chapter 2: Number Systems and Boolean algebra</title>
+    <style> h1{
+            text-align: center;
+            color: #71c511;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            color:rgb(245, 238, 221);
+        }
+        tr{
+            border: 1px solid #ffffff;
+            font-weight: 50%;
+        }
+        td{
+            border: 1px solid #ffffff;
+            font-weight: 50%;
+            background-color: rgb(94, 92, 92);
+        }
+        th{
+            border: 1px solid #ffffff;
+            font-weight: 150%;
+            background-color: rgb(46, 45, 45);
+        }
+    </style>
 </head>
 
-<body>
-    <a href = "table_of_contents.html"> Back to table of contents</a>
+<body style="background-color: #1234cb; ">
+
+    <div style="margin: 10; padding: 10px; border-radius: 30px; background-color: #00000d;; width:fit-content; display: flex; justify-content:left; ">
+        <a href = "table_of_contents.html" style="text-decoration: none; color:rgb(174, 128, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+            <big><big>⬅</big></big>
+        </a>
+    </div>
+    <br>
+    <div style="margin: auto; padding: 10px; border-radius: 30px; background-color: #00000d; color: #ffffff;">
+        <h1 style="text-align: center; color: #0de894"> 
+            <b>Number Systems and Boolean Algebra</b>
+        </h1>
+    </div>
+    <p style="text-align: justify; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; line-height: 1.5;">
+        <div style="margin: auto; padding: 20px; border-radius: 30px; background-color: #03043f; color: #ffffff;">
+            <h1>
+                <b>Introduction to Number Systems</b>
+            </h1>
+            <h3>A number system is a systematic way of representing numbers. In computing, different number systems are used for various purposes,
+             from internal processing to data representation.The value of a digit in a positional number system depends on the digit itself, 
+             its position within the number, and the base (or radix) of the number system.</h3>
+        </div>
+        <br>
+        <div style="margin: auto; padding: 20px; border-radius: 30px; background-color: #03043f; color: #ffffff;"> 
+            <h1>
+                <b>Number System Conversions</b>
+            </h1>
+            <h3>Converting numbers between different bases is a critical skill in computer science. Here, we'll cover the most common conversions.</h3>
+        </div>
+        <br>
+        <div style="margin: auto; padding: 20px; border-radius: 30px; background-color: #03043f; color: #ffffff;">
+            <br>
+            <div style="margin:auto; padding: 20px; border-radius: 30px; background-color: rgb(1, 48, 136); color: #ffffff;">
+                <h1>
+                    <b>1. Decimal to Binary, Octal, and Hexadecimal Conversion
+                    </b>
+                </h1>
+                <h3>To convert a decimal number to another base, we use the division-remainder method.
+                    Divide the decimal number by the target base repeatedly, noting the remainders at each step.
+                    The remainders, read from bottom to top, form the number in the new base.</h3>
+            </div>
+            <br>
+            <div style="margin:auto; padding: 20px; border-radius: 30px; background-color: rgb(1, 48, 136); color: #ffffff;">
+                <h1>
+                    <b>2. Binary, Octal, and Hexadecimal to Decimal Conversion 
+                    </b>
+                </h1>
+                <h3>To convert a number from any base to decimal, multiply each digit by its corresponding positional weight(base raised to the power of its position)
+                    and sum the results. Positions are counted from right to left, starting with 0.
+                   
+                </h3>
+            </div>
+            <br>
+            <div style="margin:auto; padding: 20px; border-radius: 30px; background-color: rgb(1, 48, 136); color: #ffffff;">
+                <h1>
+                    <b> VALUE TABLE OF NUMBER SYSTEMS
+                    </b>
+                </h1>
+                <h3>
+                    <table align="center" style="width: 70%; border-collapse: collapse; color: #ffffff; border: 3px solid #ffffff;">
+                        <tr >
+                            <th style="text-align: center; padding-right: 20px;">Decimal</th>
+                            <th style="text-align: center; padding-right: 20px;">Binary</th>
+                            <th style="text-align: center; padding-right: 20px;">Octal</th>
+                            <th style="text-align: center; padding-right: 20px;">Hexadecimal</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">0</td>
+                            <td style="text-align: center; padding-right: 20px;">0000</td>
+                            <td style="text-align: center; padding-right: 20px;">0</td>
+                            <td style="text-align: center; padding-right: 20px;">0</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">1</td>
+                            <td style="text-align: center; padding-right: 20px;">0001</td>
+                            <td style="text-align: center; padding-right: 20px;">1</td>
+                            <td style="text-align: center; padding-right: 20px;">1</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">2</td>
+                            <td style="text-align: center; padding-right: 20px;">0010</td>
+                            <td style="text-align: center; padding-right: 20px;">2</td>
+                            <td style="text-align: center; padding-right: 20px;">2</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">3</td>
+                            <td style="text-align: center; padding-right: 20px;">0011</td>
+                            <td style="text-align: center; padding-right: 20px;">3</td>
+                            <td style="text-align: center; padding-right: 20px;">3</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">4</td>
+                            <td style="text-align: center; padding-right: 20px;">0100</td>
+                            <td style="text-align: center; padding-right: 20px;">4</td>
+                            <td style="text-align: center; padding-right: 20px;">4</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">5</td>
+                            <td style="text-align: center; padding-right: 20px;">0101</td>
+                            <td style="text-align: center; padding-right: 20px;">5</td>
+                            <td style="text-align: center; padding-right: 20px;">5</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">6</td>
+                            <td style="text-align: center; padding-right: 20px;">0110</td>
+                            <td style="text-align: center; padding-right: 20px;">6</td>
+                            <td style="text-align: center; padding-right: 20px;">6</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">7</td>
+                            <td style="text-align: center; padding-right: 20px;">0111</td>
+                            <td style="text-align: center; padding-right: 20px;">7</td>
+                            <td style="text-align: center; padding-right: 20px;">7</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">8</td>
+                            <td style="text-align: center; padding-right: 20px;">1000</td>
+                            <td style="text-align: center; padding-right: 20px;">10</td>
+                            <td style="text-align: center; padding-right: 20px;">8</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">9</td>
+                            <td style="text-align: center; padding-right: 20px;">1001</td>
+                            <td style="text-align: center; padding-right: 20px;">11</td>
+                            <td style="text-align: center; padding-right: 20px;">9</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">10</td>
+                            <td style="text-align: center; padding-right: 20px;">1010</td>
+                            <td style="text-align: center; padding-right: 20px;">12</td>
+                            <td style="text-align: center; padding-right: 20px;">A</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">11</td>
+                            <td style="text-align: center; padding-right: 20px;">1011</td>
+                            <td style="text-align: center; padding-right: 20px;">13</td>
+                            <td style="text-align: center; padding-right: 20px;">B</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">12</td>
+                            <td style="text-align: center; padding-right: 20px;">1100</td>
+                            <td style="text-align: center; padding-right: 20px;">14</td>
+                            <td style="text-align: center; padding-right: 20px;">C</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">13</td>
+                            <td style="text-align: center; padding-right: 20px;">1101</td>
+                            <td style="text-align: center; padding-right: 20px;">15</td>
+                            <td style="text-align: center; padding-right: 20px;">D</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">14</td>
+                            <td style="text-align: center; padding-right: 20px;">1110</td>
+                            <td style="text-align: center; padding-right: 20px;">16</td>
+                            <td style="text-align: center; padding-right: 20px;">E</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; padding-right: 20px;">15</td>
+                            <td style="text-align: center; padding-right: 20px;">1111</td>
+                            <td style="text-align: center; padding-right: 20px;">17</td>
+                            <td style="text-align: center; padding-right: 20px;">F</td>
+                        </tr>
+                    </table>
+                </h3>
+            </div>
+            <br>
+        </div>
+    </p>
 </body>
 </html>
